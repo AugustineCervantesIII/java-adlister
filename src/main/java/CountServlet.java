@@ -6,18 +6,20 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello")
-public class HelloWorldServlet extends HttpServlet {
+public class CountServlet extends HttpServlet {
+    private int counter = 0;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.setContentType("text/html");
-        resp.getWriter();
+        counter += 1;
+        resp.getWriter().println("<h3>Number of times this page has been viewed " + counter + "</h3>");
         PrintWriter out = resp.getWriter();
 
         String name = req.getParameter("name");
 
         if(name == null){
-         name = "World";
+            name = "World";
         }
         out.println("<h1>Hello " + name + "!</h1>");
     }

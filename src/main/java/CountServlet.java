@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello")
+@WebServlet(name = "CountServlet", urlPatterns = "/count")
 public class CountServlet extends HttpServlet {
     private int counter = 0;
 

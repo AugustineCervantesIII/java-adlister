@@ -15,8 +15,10 @@
 <body>
 <%= new java.util.Date() %>
     <%@ include file="partials/navbar.jsp"%>
+<%@ include file="partials/login.jsp" %>
     <h1>Hello, <%= firstname + " " + lastname%></h1>
     <%@ include file="partials/aboutme.jsp"%>
+<%@ include file="partials/profile.jsp" %>
 <%--    <%@ inlcude file="partials/login.jsp"%>--%>
     <%@ include file="partials/footer.jsp"%>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>

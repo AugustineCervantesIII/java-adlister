@@ -22,5 +22,17 @@
 <p>Converting a string to an uppercase: <%= new String("Augustine").toUpperCase() %></p>
 <p>25 multiplied by 4 equals <%= 25*4 %></p>
 <p>is 75 less than 69 <%= 75 < 69 %></p>
+<%!
+    String makeItLower(String data){
+        return data.toLowerCase();
+    }
+%>
+lower case "Hello World": <%= makeItLower("Hello World")%>
+<br>
+<%
+    for (int i = 1; i <= 5; i++){
+        out.println("<br/>this is a for loop: " + i);
+    }
+%>
 </body>
 </html>

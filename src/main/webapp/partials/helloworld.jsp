@@ -12,6 +12,7 @@
     <title>Practicing</title>
 </head>
 <body>
+<%@ include file="navbar.jsp" %>
 <h3>Hello World</h3>
 <%= new java.util.Date() %>
 <br>
@@ -39,5 +40,11 @@ lower case "Hello World": <%= makeItLower("Hello World")%>
         out.println("<br/>this is a for loop: " + i);
     }
 %>
+
+<h3>JSP BUILT IN OBJECTS</h3>
+Request user agent: <%= request.getHeader("User-Agent") %>
+<br>
+Request language: <%= request.getLocale() %>
+<%@ include file="footer.jsp" %>
 </body>
 </html>

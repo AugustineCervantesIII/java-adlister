@@ -1,5 +1,6 @@
 import java.sql.*;
 import com.mysql.cj.jdbc.Driver;
+import models.Album;
 
 public class JDBCLec {
 
@@ -60,7 +61,7 @@ public class JDBCLec {
             //            rs.beforeFirst();
 //            rs.next();
 
-//            Album album = new Album(rs.getLong("id"),
+//            models.Album album = new models.Album(rs.getLong("id"),
 //                rs.getString("artist"),
 //                rs.getString("name"),
 //                rs.getInt("release_date"),
@@ -101,7 +102,7 @@ public class JDBCLec {
 
             // ======================== INSERTING A RECORD
 
-//            Album brandNewAlbum = new Album(
+//            models.Album brandNewAlbum = new models.Album(
 //                "The Cure",
 //                "Disintegration",
 //                1989,

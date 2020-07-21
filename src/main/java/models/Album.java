@@ -1,3 +1,5 @@
+package models;
+
 public class Album {
 
     private long id;
@@ -74,7 +76,7 @@ public class Album {
 
     @Override
     public String toString() {
-        return "Album{" +
+        return "models.Album{" +
                 "id=" + id +
                 ", artist_name='" + artist + '\'' +
                 ", record_name='" + name + '\'' +

@@ -1,6 +1,8 @@
 package models;
 
 import com.mysql.cj.jdbc.Driver;
+import controllers.Config;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +16,7 @@ public class MySQLAdsDao implements Ads {
             DriverManager.registerDriver(new Driver());
             this.connection = DriverManager.getConnection(
                     config.getUrl(),
-                    config.getUser(),
+                    config.getUsername(),
                     config.getPassword());
         } catch (SQLException e) {
             e.printStackTrace();

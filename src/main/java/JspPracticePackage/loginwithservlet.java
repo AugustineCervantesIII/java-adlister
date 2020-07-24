@@ -11,8 +11,8 @@ import java.io.PrintWriter;
 @WebServlet(name = "/loginwithservlet", urlPatterns = "/loginwithservlet")
 public class loginwithservlet extends HttpServlet {
 
-//doget is good for debugging, bookmarking or email url and limitations on data length
-    //dopost cant bookmark or email url, no limitations on data length can also send binary data
+//doget is good for debugging, bookmarking or email url and limitations on data length, grabs the get information to show in the browser with logic from the servlet
+    //dopost cant bookmark or email url, no limitations on data length can also send binary data, posts the information to the browser with the logic from the servlet for forms
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
